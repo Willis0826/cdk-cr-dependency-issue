@@ -1,4 +1,4 @@
-# custom resource for EIP disassociation
+# CDK CR (Custom Resource) Deoendency Issue
 
 ## the steps to reproduce inconsistent deletion
 
