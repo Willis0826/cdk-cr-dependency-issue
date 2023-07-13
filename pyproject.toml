@@ -1,0 +1,15 @@
+[tool.poetry]
+name = "cdk-cr-dependency-issue"
+version = "0.1.0"
+description = ""
+authors = ["Willis Chou <dsa663838@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.8"
+aws-cdk-lib = "2.40.0"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
