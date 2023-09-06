@@ -26,7 +26,7 @@ class Main(Stack):
             vpc_subnets=SubnetSelection(subnets=self.vpc.public_subnets),
         )
 
-        wait_For_eip_lambda: Function = Function(  # noqa
+        wait_for_eip_lambda: Function = Function(  # noqa
             self, 'custom-resource-handler',
             runtime=Runtime.PYTHON_3_7,
             code=Code.from_asset('main/lambda'),
@@ -50,7 +50,7 @@ class Main(Stack):
             # wait_for_dissociation = WaitForEipDissociation(
             #     self,
             #     f"custom-resource-{letters[i]}",
-            #     service_token=wait_For_eip_lambda.function_arn,
+            #     service_token=wait_for_eip_lambda.function_arn,
             #     elastic_ip=elastic_ip,
             #     target_subnet=subnet,
             # )
